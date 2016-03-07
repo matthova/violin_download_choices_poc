@@ -98,8 +98,8 @@ $(document).ready(function(){
   // When the selected violin size is changed
   // Load that model's availble printer options
   $violin_size.change(function(e){
-    console.log(e);
     refreshDownloadOptions();
+    updateDownloadLink();
   });
 
   $printer_type.change(function(e){
